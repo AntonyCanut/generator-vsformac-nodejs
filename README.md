@@ -1,4 +1,4 @@
-# generator-pulsar
+# generator-vsformac-nodejs
 
 Welcome in my Generator.
 

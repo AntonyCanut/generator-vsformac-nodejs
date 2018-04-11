@@ -3,7 +3,7 @@
   "_id": "generator-vsformac-nodejs@1.0.0",
   "_inBundle": false,
   "_integrity": "sha512-AC+R85cHrU6DLnaX2mJWLFzDVcr+c6GA7vqi7u5dBsiGpxOh12Xy0N+RGj2EFidQnD1guc++kuO0s4iCCX0xow==",
-  "_location": "/generator-pulsar",
+  "_location": "/generator-vsformac-nodejs",
   "_phantomChildren": {},
   "_requested": {
     "type": "tag",
@@ -58,7 +58,7 @@
   ],
   "license": "MIT",
   "main": "app/index.js",
-  "name": "generator-pulsar",
+  "name": "generator-vsformac-nodejs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AntonyCanut/generator-vsformac-nodejs.git"
