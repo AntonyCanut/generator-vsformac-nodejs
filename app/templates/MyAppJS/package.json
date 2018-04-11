@@ -1,0 +1,12 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "<%= descriptionField %>",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "<%= authorname %>",
+  "license": "ISC",
+  "dependencies": {}
+}

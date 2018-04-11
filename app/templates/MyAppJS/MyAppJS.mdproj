@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ItemType>GenericProject</ItemType>
+    <ProjectGuid>{<%= nodeUUID %>}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
+    <OutputPath>.\</OutputPath>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>BeforeBuild</type>
+          <command>npm install</command>
+          <workingdir>${ProjectDir}</workingdir>
+        </Command>
+        <Command>
+          <type>Build</type>
+          <command>npm test</command>
+          <workingdir>${ProjectDir}</workingdir>
+          <externalConsole>True</externalConsole>
+          <pauseExternalConsole>True</pauseExternalConsole>
+        </Command>
+        <Command>
+          <type>Clean</type>
+          <command>rm -rf node_modules</command>
+          <workingdir>${ProjectDir}</workingdir>
+        </Command>
+        <Command>
+          <type>Custom</type>
+          <name>Open Terminal</name>
+          <command>osascript -e 'tell app "Terminal" to do script "cd ${ProjectDir}"'</command>
+          <workingdir>${ProjectDir}</workingdir>
+          <pauseExternalConsole>True</pauseExternalConsole>
+        </Command>
+        <Command>
+          <type>Custom</type>
+          <name>Update Global Packages</name>
+          <command>npm update -g</command>
+        </Command>
+        <Command>
+          <type>Custom</type>
+          <name>Update Packages</name>
+          <command>npm update</command>
+          <workingdir>${ProjectDir}</workingdir>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="index.js" />
+    <None Include="package.json" />
+    <None Include="package-lock.json" />
+  </ItemGroup>
+</Project>
