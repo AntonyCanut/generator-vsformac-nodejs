@@ -1,0 +1,70 @@
+{
+  "_from": "generator-vsformac-nodejs",
+  "_id": "generator-vsformac-nodejs@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-AC+R85cHrU6DLnaX2mJWLFzDVcr+c6GA7vqi7u5dBsiGpxOh12Xy0N+RGj2EFidQnD1guc++kuO0s4iCCX0xow==",
+  "_location": "/generator-pulsar",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "generator-vsformac-nodejs",
+    "name": "generator-vsformac-nodejs",
+    "escapedName": "generator-vsformac-nodejs",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/generator-vsformac-nodejs/-/generator-vsformac-nodejs-1.0.0.tgz",
+  "_shasum": "806e978bcdfa8b3e97b8043cc5b9b9cf2f58b027",
+  "_spec": "generator-vsformac-nodejs",
+  "_where": "/usr/local/lib/node_modules",
+  "author": {
+    "name": "Antony Canut"
+  },
+  "bugs": {
+    "url": "https://github.com/AntonyCanut/generator-vsformac-nodejs"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "uuid": "^3.1.0",
+    "yeoman-generator": "^2.0.2",
+    "yosay": "^2.0.2"
+  },
+  "deprecated": false,
+  "description": "Yeoman generator for a make nodejs app in Visual Studio For Mac.",
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-bestseller": "^1.1.15",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^4.0.1",
+    "gulp-mocha": "^5.0.0",
+    "mocha": "^4.1.0",
+    "yeoman-assert": "^3.1.0"
+  },
+  "homepage": "https://github.com/AntonyCanut/generator-vsformac-nodejs",
+  "keywords": [
+    "yeoman-generator",
+    "xamarin",
+    "xamarin studio",
+    "visual studio for mac",
+    "visual studio",
+    "vs for mac",
+    "vsfm"
+  ],
+  "license": "MIT",
+  "main": "app/index.js",
+  "name": "generator-pulsar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonyCanut/generator-vsformac-nodejs.git"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "version": "1.0.0"
+}
